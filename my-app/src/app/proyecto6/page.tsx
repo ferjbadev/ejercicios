@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Proyecto6() {
   const [palabra, setPalabra] = useState("");
@@ -12,17 +13,26 @@ export default function Proyecto6() {
       return;
     }
 
-    // Quitamos espacios con replace y contamos longitud
+    // Quitamos espacios y contamos longitud
     const cantidad = palabra.replace(/\s+/g, "").length;
     setContador(cantidad);
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-green-100 via-emerald-100 to-teal-200 p-6">
-      <div className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md text-center">
-        <h1 className="text-2xl font-bold text-green-600 mb-6">
-          🔤 Contador de Letras
-        </h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-100 via-emerald-100 to-teal-200 p-6">
+      
+      {/* Contenedor principal */}
+      <div className="bg-white rounded-2xl shadow-xl p-8 w-full max-w-md text-center">
+        
+        {/* Texto animado */}
+        <motion.p
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.5 }}
+          className="text-xl font-bold mb-6 text-green-600"
+        >
+          6-) En esta sección, vamos a contar las letras de una palabra 🔤
+        </motion.p>
 
         {/* Input */}
         <input
@@ -30,13 +40,13 @@ export default function Proyecto6() {
           placeholder="Escribe una palabra"
           value={palabra}
           onChange={(e) => setPalabra(e.target.value)}
-          className="w-full px-4 py-2 mb-4 border border-green-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400 text-center"
+          className="w-full px-4 py-2 mb-4 border border-black text-black rounded-lg text-center"
         />
 
         {/* Botón */}
         <button
           onClick={contarLetras}
-          className="w-full px-6 py-2 bg-green-500 text-white rounded-xl shadow hover:bg-green-600 transition"
+          className="w-full px-6 py-2 bg-green-500 text-white border border-black rounded-xl shadow hover:bg-green-600 transition"
         >
           Contar Letras
         </button>
@@ -52,10 +62,12 @@ export default function Proyecto6() {
           </div>
         )}
       </div>
-         <div className="mt-24">
+
+      {/* Botón de regresar fuera del contenedor */}
+      <div className="mt-6">
         <Link
           href="/"
-          className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300"
+          className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300 border border-black"
         >
           Regresar
         </Link>
