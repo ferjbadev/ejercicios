@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Proyecto7() {
@@ -50,6 +51,14 @@ export default function Proyecto7() {
             <p className="text-lg font-semibold text-indigo-700">{mensaje}</p>
           </div>
         )}
+      </div>
+         <div className="mt-24">
+        <Link
+          href="/"
+          className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300"
+        >
+          Regresar
+        </Link>
       </div>
     </div>
   );

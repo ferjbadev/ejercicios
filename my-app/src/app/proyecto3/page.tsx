@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Proyecto3() {
@@ -13,7 +14,7 @@ export default function Proyecto3() {
       return;
     }
 
-    const resultado = (c * 9/5 + 32).toFixed(2); // Fórmula
+    const resultado = ((c * 9) / 5 + 32).toFixed(2); // Fórmula
     setFahrenheit(resultado);
   };
 
@@ -51,6 +52,14 @@ export default function Proyecto3() {
             </p>
           </div>
         )}
+      </div>
+      <div className="mt-24">
+        <Link
+          href="/"
+          className="inline-block px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300"
+        >
+          Regresar
+        </Link>
       </div>
     </div>
   );
