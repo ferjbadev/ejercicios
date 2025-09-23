@@ -48,14 +48,10 @@ export default function Proyecto1() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
-          className="text-center text-black font-bold text-2xl mb-6"
+          className="text-xl font-bold mb-6 text-blue-600 text-center"
         >
-          1-) En esta sección! vamos a calcular el promedio de notas de un alumno
+          1-) En esta sección, vamos a calcular el promedio de notas de un alumno 📘:
         </motion.p>
-
-        <h1 className="text-xl font-bold mb-6 text-blue-600 text-center">
-          Promedio de Notas 📘
-        </h1>
 
         <input
           type="text"
