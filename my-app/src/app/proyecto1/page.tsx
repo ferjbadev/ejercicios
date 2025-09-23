@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 export default function Proyecto1() {
-  const [cantidad, setCantidad] = useState<string>(""); // cantidad de notas a ingresar
+  const [cantidad, setCantidad] = useState<number>(0); // cantidad de notas a ingresar
   const [notas, setNotas] = useState<string[]>([]); // array dinámico de notas
   const [promedio, setPromedio] = useState<string | null>(null); // resultado final
 

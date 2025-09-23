@@ -5,7 +5,7 @@ export default function Proyecto10() {
   const [num1, setNum1] = useState("");
   const [num2, setNum2] = useState("");
   const [num3, setNum3] = useState("");
-  const [mayor, setMayor] = useState(null);
+  const [mayor, setMayor] = useState<string | null>(null);
 
   const compararNumeros = () => {
     const n1 = Number(num1);

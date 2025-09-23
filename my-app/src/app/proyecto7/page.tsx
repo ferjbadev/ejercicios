@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Proyecto7() {
   const [edad, setEdad] = useState("");
-  const [mensaje, setMensaje] = useState(null);
+  const [mensaje, setMensaje] = useState<string | null>(null);
 
   const verificarEdad = () => {
     const e = Number(edad);

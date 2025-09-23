@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Proyecto8() {
   const [x, setX] = useState("");
   const [y, setY] = useState("");
-  const [resultado, setResultado] = useState(null);
+  const [resultado, setResultado] = useState<string | null>(null);
 
   const calcular = () => {
     const numX = Number(x);

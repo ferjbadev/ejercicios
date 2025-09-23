@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Proyecto6() {
   const [palabra, setPalabra] = useState("");
-  const [contador, setContador] = useState(null);
+  const [contador, setContador] = useState<number | string | null>(null);
 
   const contarLetras = () => {
     if (!palabra.trim()) {

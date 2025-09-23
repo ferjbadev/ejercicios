@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Proyecto9() {
   const [nota, setNota] = useState("");
-  const [calificacion, setCalificacion] = useState(null);
+  const [calificacion, setCalificacion] = useState<string | null>(null);
 
   const calcularCalificacion = () => {
     const n = Number(nota);
