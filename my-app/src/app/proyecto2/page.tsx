@@ -23,7 +23,7 @@ export default function Proyecto2() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-200 via-pink-100 to-yellow-100 p-6">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md text-center">
         <h1 className="text-2xl font-bold text-purple-600 mb-6">
-          📐 Calculadora de Área de un Círculo
+           Calculadora de Área de un Círculo 📐
         </h1>
 
         {/* Input para radio */}
@@ -32,13 +32,13 @@ export default function Proyecto2() {
           placeholder="Ingresa el radio"
           value={radio}
           onChange={(e) => setRadio(e.target.value)}
-          className="w-full px-4 py-2 mb-4 border border-purple-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 text-center"
+          className="w-full px-4 py-2 mb-4 border  border-black text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-400 text-center"
         />
 
         {/* Botón */}
         <button
           onClick={calcularArea}
-          className="w-full px-6 py-2 bg-purple-500 text-white rounded-xl shadow hover:bg-purple-600 transition"
+          className="w-full px-6 py-2 cursor-pointer bg-purple-500 text-white rounded-xl shadow hover:bg-purple-600 transition"
         >
           Calcular Área
         </button>
