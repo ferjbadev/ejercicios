@@ -40,6 +40,36 @@ export default function Home() {
         >
           Proyecto 6
         </Link>
+        <Link
+          href="/proyecto7"
+          className="px-6 py-4 bg-pink-500 text-white rounded-2xl shadow hover:bg-pink-600 transition"
+        >
+          Proyecto 7
+        </Link>
+        <Link
+          href="/proyecto8"
+          className="px-6 py-4 bg-pink-500 text-white rounded-2xl shadow hover:bg-pink-600 transition"
+        >
+          Proyecto 8
+        </Link>
+        <Link
+          href="/proyecto9"
+          className="px-6 py-4 bg-pink-500 text-white rounded-2xl shadow hover:bg-pink-600 transition"
+        >
+          Proyecto 9
+        </Link>
+        <Link
+          href="/proyecto10"
+          className="px-6 py-4 bg-pink-500 text-white rounded-2xl shadow hover:bg-pink-600 transition"
+        >
+          Proyecto 10
+        </Link>
+        <Link
+          href="/proyecto11"
+          className="px-6 py-4 bg-pink-500 text-white rounded-2xl shadow hover:bg-pink-600 transition"
+        >
+          Proyecto 11
+        </Link>
       </div>
     </main>
   );
